@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <h1>Homepage 😝</h1>
+    <p>{{ thibaud|default('Thibaud is awesome 😍') }}</p>
+    {{ dump(thibaud) }}
+{% endblock %}
