@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-3">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="http://fakeimg.pl/250x200/" class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#"><h5 class="card-title">{{ product.name|capitalize }}</h5></a>
+                            <p class="card-text">{{ product.description|capitalize }}</p>
+                            <hr>
+                            <p><strong>{{ product.price }} €</strong></p>
+                            <a href="#" class="btn btn-primary">ACHETER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
