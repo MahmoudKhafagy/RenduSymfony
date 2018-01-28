@@ -19,6 +19,9 @@ class ProductController extends Controller
     public function index(RegistryInterface $doctrine)
     {
         $products = $doctrine->getRepository(Product::class)->findAll();
-        return $this->render('products/index.html.twig', compact('products'));
+        return $this->render('homepage.html.twig', compact('products'));
+    }
+    public function showProduct(){
+
     }
 }

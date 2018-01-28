@@ -10,9 +10,10 @@
                         <img src="http://fakeimg.pl/250x200/" class="card-img-top" alt="Card image cap">
                         <div class="card-body">
                             <a href="#"><h5 class="card-title">{{ product.name|capitalize }}</h5></a>
+                            <p><strong>Description:</strong></p>
                             <p class="card-text">{{ product.description|capitalize }}</p>
                             <hr>
-                            <p><strong>{{ product.price }} €</strong></p>
+                            <p><strong>Prix {{ product.price }} €</strong></p>
                             <a href="#" class="btn btn-primary">ACHETER</a>
                         </div>
                     </div>
